@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:background="@color/FG"
+    tools:context=".SignIn">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp">
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="20dp"
+            android:fontFamily="@font/poppins_black"
+            android:gravity="center"
+            android:text="Welcome Back"
+            android:textColor="@color/BG"
+            android:textStyle="bold"
+            android:textSize="24sp"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            android:id="@+id/ivTransport_Clip"
+            android:src="@drawable/caterer_clip"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/BG"
+            app:boxStrokeWidth="2dp"
+            android:hint="Enter Username"
+            app:hintTextColor="@color/BG"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="15sp"
+                android:id="@+id/etUsernameSignin"
+                android:padding="12dp"
+                android:gravity="center_horizontal"
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/BG"
+            app:boxStrokeWidth="2dp"
+            android:hint="Enter Password"
+            app:hintTextColor="@color/BG"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etPasswordSignin"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="15sp"
+                android:padding="12dp"
+                android:gravity="center_horizontal"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:textSize="15sp"
+            app:cornerRadius="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="20dp"
+            android:backgroundTint="@color/BG"
+            android:id="@+id/btnSignIn"
+            android:fontFamily="@font/poppins_medium"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

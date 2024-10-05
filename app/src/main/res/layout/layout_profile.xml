@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DeliveredFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="4dp"
+            android:layout_marginHorizontal="8dp"
+            android:backgroundTint="@color/FG"
+            app:cardCornerRadius="20dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginVertical="20dp"
+                android:paddingVertical="20dp"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Imdaad Hussain"
+                    android:id="@+id/tvName"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/BG"
+                    android:gravity="center"
+                    android:layout_marginVertical="10dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vehicle Type, City"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:id="@+id/tvCarLocation"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/BG"
+                    android:gravity="center"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Phone No: 0301-1234567"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:id="@+id/tvPhone"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/BG"
+                    android:gravity="center"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email: something@something.com"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:id="@+id/tvEmail"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/BG"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    app:boxBackgroundMode="outline"
+                    app:boxStrokeColor="@color/BG"
+                    app:boxStrokeWidth="2dp"
+                    app:hintTextColor="@color/BG"
+                    android:hint="Enter New Phone Number"
+
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:padding="12dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textSize="15sp"
+                        android:id="@+id/etPhone"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center_horizontal"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    app:boxBackgroundMode="outline"
+                    app:boxStrokeColor="@color/BG"
+                    app:boxStrokeWidth="2dp"
+                    app:hintTextColor="@color/BG"
+                    android:hint="Enter New Password"
+
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:fontFamily="@font/poppins_medium"
+                        android:textSize="15sp"
+                        android:padding="12dp"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/etPassword"
+                        android:gravity="center_horizontal"
+                        android:layout_marginBottom="10dp"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Change Phone Number"
+                    android:textSize="15sp"
+                    app:cornerRadius="10dp"
+                    android:textColor="@color/FG"
+                    android:layout_marginHorizontal="20dp"
+                    android:backgroundTint="@color/BG"
+                    android:fontFamily="@font/poppins_medium"
+                    />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:backgroundTint="@color/BG"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Change Password"
+                    android:textColor="@color/FG"
+                    android:textSize="15sp"
+                    app:cornerRadius="10dp" />
+
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+</LinearLayout>
