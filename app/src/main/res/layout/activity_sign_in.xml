@@ -41,6 +41,7 @@
             app:boxStrokeColor="@color/BG"
             app:boxStrokeWidth="2dp"
             android:hint="Enter Username"
+            app:endIconMode="custom"
             app:hintTextColor="@color/BG"
             >
             <com.google.android.material.textfield.TextInputEditText
@@ -63,6 +64,7 @@
             app:boxBackgroundMode="outline"
             app:boxStrokeColor="@color/BG"
             app:boxStrokeWidth="2dp"
+            app:endIconMode="password_toggle"
             android:hint="Enter Password"
             app:hintTextColor="@color/BG"
             >
@@ -83,6 +85,7 @@
             android:text="Sign In"
             android:textSize="15sp"
             app:cornerRadius="10dp"
+
             android:layout_marginTop="10dp"
             android:layout_marginHorizontal="20dp"
             android:backgroundTint="@color/BG"

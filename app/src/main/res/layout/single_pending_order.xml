@@ -7,6 +7,7 @@
     android:orientation="horizontal"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <!-- Hidden buttons layout (which will be revealed) -->
+    <!-- Hidden buttons layout (which will be revealed) -->
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/btnMoreInfo2"
         android:layout_width="wrap_content"
@@ -72,19 +73,32 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toEndOf="@id/tvSwipeIndicator"
                 android:textSize="14sp"
-                android:id="@+id/tvGraveType"
+                android:id="@+id/tvUserName"
                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Pick Up"
-                android:textStyle="italic"
+                android:text="Distance"
                 android:fontFamily="@font/poppins_medium"
                 android:textColor="@color/FG"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:textSize="14sp"
-                android:id="@+id/tvUserResidence"
+                android:textStyle="bold"
+                android:id="@+id/tvDistance"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Away from You"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/FG"
+                app:layout_constraintTop_toBottomOf="@id/tvDistance"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/tvOrderType"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:id="@+id/tvAwayText"
                 />
             <Button
                 android:id="@+id/tvSwipeIndicator"
@@ -106,39 +120,27 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="ID: LHR12345"
+                android:text="Amount"
                 android:textStyle="bold"
                 android:fontFamily="@font/poppins_medium"
                 android:textColor="@color/FG"
 
-                app:layout_constraintTop_toBottomOf="@id/tvGraveType"
+                app:layout_constraintTop_toBottomOf="@id/tvUserName"
                 app:layout_constraintStart_toEndOf="@id/tvSwipeIndicator"
                 android:textSize="14sp"
-                android:id="@+id/tvGraveID"
+                android:id="@+id/tvFare"
                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Drop off"
-                android:textStyle="italic"
-                android:fontFamily="@font/poppins_medium"
-                android:textColor="@color/FG"
-                app:layout_constraintTop_toBottomOf="@id/tvGraveType"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:textSize="14sp"
-                android:id="@+id/tvUsername"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Order Type"
+                android:text="Caterer Order"
                 android:textStyle="bold"
                 android:fontFamily="@font/poppins_medium"
                 android:textColor="@color/FG"
-                app:layout_constraintTop_toBottomOf="@id/tvGraveID"
+                app:layout_constraintTop_toBottomOf="@id/tvFare"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:textSize="14sp"
-                android:id="@+id/tvSensorEnability"
+                android:id="@+id/tvOrderType"
                 />
             <TextView
                 android:layout_width="wrap_content"
@@ -147,10 +149,10 @@
                 android:textStyle="bold"
                 android:fontFamily="@font/poppins_medium"
                 android:textColor="@color/FG"
-                app:layout_constraintTop_toBottomOf="@id/tvGraveID"
+                app:layout_constraintTop_toBottomOf="@id/tvFare"
                 app:layout_constraintStart_toEndOf="@id/tvSwipeIndicator"
                 android:textSize="14sp"
-                android:id="@+id/tvOrderStatus"
+                android:id="@+id/tvPhone"
                 />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.card.MaterialCardView>
@@ -192,6 +194,7 @@
 
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
+
 
 
 </LinearLayout>

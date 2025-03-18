@@ -87,6 +87,11 @@
                     android:textColor="@color/BG"
                     android:textStyle="bold"
                     android:textSize="25sp"/>
+                <EditText
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    android:id="@+id/etHiddenEditText"
+                    />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
         <com.google.android.material.card.MaterialCardView
@@ -104,6 +109,11 @@
                 android:id="@+id/rvPendings"
                 android:padding="14dp"
                 android:layout_height="match_parent"/>
+            <include
+                layout="@layout/layout_booked_order"
+                android:visibility="gone"
+                android:id="@+id/booked_order_layout"
+                />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

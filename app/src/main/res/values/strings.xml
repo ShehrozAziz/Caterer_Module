@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Caterer_Module</string>
+    <string name="server_IP">http://192.168.167.242:5002/</string>
+    <string name="websocket_IP">ws://192.168.167.242:5002/</string>
 </resources>

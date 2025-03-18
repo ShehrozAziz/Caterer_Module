@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.caterer_module"
-        minSdk = 24
+        minSdk = 23
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -39,4 +39,12 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.2.1")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.6.1")
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation ("com.squareup.okhttp3:okhttp:4.10.0")
+    implementation("javax.websocket:javax.websocket-api:1.1")
+    implementation("org.java-websocket:Java-WebSocket:1.5.2")
+    implementation("com.google.code.gson:gson:2.8.9")
+    implementation("com.google.android.gms:play-services-location:21.0.1")
+
 }
